@@ -12,7 +12,7 @@ formattedDate = today.strftime("%d/%m/%Y")
 print(formattedDate, " ", weight)
 
 # Open CSV and add entered weight
-f = open('weight-tracking.csv', 'w')
+f = open('weight-tracking.csv', 'a', newline='')
 writer = csv.writer(f)
 writer.writerow([formattedDate, weight])
 print("Weight recorded")
