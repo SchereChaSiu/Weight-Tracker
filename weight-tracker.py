@@ -6,7 +6,7 @@ from datetime import date
 #    writer.writerow(["Date", "Weight"])
 
 # Ask the user for their current weight. 
-weight = input("Enter Your Weight! \n")
+# weight = input("Enter Your Weight! \n")
 today = date.today()
 formattedDate = today.strftime("%d/%m/%Y")
 print(formattedDate, " ", weight)
